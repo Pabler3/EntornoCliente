@@ -1,6 +1,6 @@
 <h1>Entorno Cliente</h1>
 
->En este repositorio encontraras los ejercicios prácticos realizados para la asignatura de Desarrollo en Entorno Cliente de la FP Superior Desarrollo de Aplicaciones Web. 
+En este repositorio encontraras los ejercicios prácticos realizados para la asignatura de Desarrollo en Entorno Cliente de la FP Superior Desarrollo de Aplicaciones Web. 
 
 <br>
 Requisitos principales
@@ -13,9 +13,9 @@ Requisitos principales
 -	JQuery.
 -	Consumición API Pública.
 
-Interfaces de la aplicación
+>Presentación de los ejercicios propuestos.
 
-![image](https://github.com/Pabler3/clicknamBack/assets/164863153/f52ee2d9-1bf6-4b2d-a2b9-c5e2be9b4f1f)
+https://github.com/Pabler3/EntornoCliente/assets/164863153/f0629cba-1ab8-4688-894e-0fe057b77152
 
 Tecnologías y utilizadas
 
@@ -30,4 +30,4 @@ Tecnologías y utilizadas
 <br>
 
 > [!TIP]
-> Contento con lo aprendido durante el curso y esta práctica en concreto, modelos así de ejercicios te hacen afianzar conceptos y buscar otros nuevos que seguro que me vendrán muy bien en el futuro próximo.
+> Échale un vistazo al código y dime que te parece.
