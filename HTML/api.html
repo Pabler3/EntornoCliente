@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/api.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilosApi.css">
+    <title>API con Fetch</title>
+</head>
+<body>
+    <div class="container">
+        <h2>API Random User</h2>
+        <p>Ésta API pública genera datos de usuario aleatoriamente. Cada llamada mostrara un usuario nuevo
+            que podremos filtrar por género y por la cantidad de usuarios.
+        </p>
+        <div class="form">
+            <form id="miFormulario">
+                <label>Genero:</label>
+                <select id="genero">
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="">Ambos</option>
+                </select>
+                <label>cantidad</label>
+                <input type="number" id="cantidad" placeholder="max 5000">
+                <button type="submit" value="mostrar" id="mostrar">Mostrar Usuarios</button>
+            </form>
+        </div>
+        <div>
+            <p>Aquí vamos a mostrar los resultados de la consulta</p>
+            <hr>
+            <div class="tabla">
+                <table id="tabla">
+                    <!--Aquí insertaremos los datos de la petición-->
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../JS/api.js"></script>
+</body>
+</html>

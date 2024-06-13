@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos_ajax_php.css"/>
+    <title>Ajax con PHP</title>
+    <script src="../JS/ajax_php.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ajax - PHP - JS - JSON</h1>
+        <p>Vamos hacer peticiones con XMLHttpRequest() a un archivo externo JSON simulando una BD
+            en la que podremos leer, insertar y borrar.
+        </p>
+        <div class="form">
+            <form id="formulario"> <!--Formulario para introducir datos-->
+                <label>Nombre:</label>
+                <input type="text" id="nombre" required="required">
+                <label>Creador:</label>
+                <input type="text" id="creador" required="required">
+                <label>Año:</label>
+                <input type="number" id="anio" required="required">
+                <label>Uso</label>
+                <input type="text" id="uso" required="required">     
+                <button type="submit" id="enviar" class="button">Nuevo Lenguaje</button>
+                <button type="button" id="ver">Ver Lenguajes</button>
+            </form>
+            <form id="formulario2"> <!--Formulario para borrar-->
+                <label>Borrar</label>
+                <input type="text" id="lenguajeBorrar" placeholder="Lenguaje a borrar" requiere="required">
+                <button type="submit" id="enviarBorrar" class="button">Borrar Lenguaje</button>
+            </form>      
+        </div>
+        <div id="resultados" class="formulario">
+            <!--Aquí insertaremos los datos de la petición.-->
+        </div>
+    </div>
+</body>
+</html>

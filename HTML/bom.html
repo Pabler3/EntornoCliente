@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/Bom.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilosBOM.css">
+    <title>Manipulación del BOM</title>
+</head>
+<body onload="inicioReloj()">
+    <div class="container"> 
+        <h1>Página para manipular el BOM</h1>
+        <div class="button">
+                <button id="abrir" onclick="abrirVentana()">Abrir Ventana</button>
+                <button id="cerrar" onclick="cerrarVentana()">Cerrar Ventana</button>
+                <button id="darFoco" onclick="darFoco()">Dar Foco</button>
+                <button id="quitarFoco" onclick="quitarFoco()">Quitar Foco</button>
+                <button id="imprimir" onclick="imprimir()">Imprimir</button>
+                <button id="mover" onclick="moverVentana()">Mover Ventana</button>
+                <button id="atras" onclick="atras()">⬅️</button>
+        </div>
+        <div class="textos">
+            <p id="parrafo"></p>
+            <p id="parrafo2"></p>
+        </div>
+        <div id="reloj">
+            <div class="fondo-reloj">
+                <div id="hora"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

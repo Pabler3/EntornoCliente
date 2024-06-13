@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Javascript",
+        "creador": "Brendan Eich",
+        "anio": 1995,
+        "uso": "FrontEnd"
+    },
+    {
+        "nombre": "PHP",
+        "creador": "Rasmus Lerdorf",
+        "anio": 1994,
+        "uso": "BackEnd"
+    },
+    {
+        "nombre": "Java",
+        "creador": "Rasmus James Gosling",
+        "anio": 1995,
+        "uso": "BackEnd"
+    },
+    {
+        "nombre": "Python",
+        "creador": "Guido van Rossum",
+        "anio": 1980,
+        "uso": "FrontEnd"
+    }
+]

@@ -1,0 +1,41 @@
+body{
+    background-image: url(../IMG/espacio.jpeg);
+    background-size: cover;
+    
+}
+
+button{
+    color:azure;
+    background-color:rgb(112, 9, 9);
+    font-family: monospace;
+    height: 35px;
+    border-color: azure;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(163, 123, 70);
+}
+
+#cohete{
+    position:absolute;
+    bottom: 0%;
+    right: 10%;
+    
+}
+
+#cuentaA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-family: monospace;
+    color:red;
+    margin-top: 10%;
+    filter: drop-shadow(0 0 15px azure)
+    
+}

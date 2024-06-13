@@ -1,0 +1,79 @@
+body {
+    margin: 20px;
+    background-image: url(../IMG/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: 100vw 100vh;
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 700px;
+    color:azure;
+    margin: auto;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    position: relative;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th {
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 8px;
+    color: rgb(186, 133, 63);
+    font-size: 16px;
+}
+
+td {
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: left;
+    padding: 8px;
+    color:azure; 
+}
+
+button {
+    margin-top: 10px;
+    font-family: monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(186, 133, 63); 
+  
+}
+
+button:hover{
+    background-color: darkcyan;
+}
+
+.highlight {
+    background-color: rgba(255, 255, 0, 0.548);
+}
+
+.form{
+    font-family: monospace;
+    margin-top: 20px;
+    
+    
+}
+
+label {
+    font-size: 14px;
+}

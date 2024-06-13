@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos_form.css">
+    <script src="../JS/validaForm.js"></script>
+    <!-- Enlazamos archivo externo js y enlaces para iconos del formulario login y registro -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-login">
+                <!-- Formulario de login que envía los datos por POST. Aqui validamos mediante los atributos de validacion html required, type,
+                     minlenght, required y las expresiones regulares con pattern -->
+                <form action="../HTML/indexjQuery.html" method="post" id="formulario">
+                    <h4>¡SPACE X!</h4>
+                    <h2>Bienvenido</h2>
+                    <div class="input-form">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <input type="text" name="nombre" id="nombre" required="required" pattern="[A-Z][a-z]{2,10}" title="Introduce el nombre entre 2 y 10 caracteres" >
+                        <label>Nombre</label>
+                    </div>
+                    <div class="input-form">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email" required="required" minlength="6" >
+                        <label>Email</label>
+                    </div>
+                    <div class="input-form">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="contrasena" id="psw"  required="required" minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$"  title="La contraseña debe contener letras, números, guión bajo o guión">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="input-form">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="text" name="telefono" id="telefono" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                        <label>Telefono</label>
+                    </div>
+                    <button type="submit" name="enviar" value="enviar" id="enviar">Entrar</button>
+                    <div class="register">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        <input type="checkbox" name="mayor18" id="mayor18">
+                        <label>Soy mayor de 18 años</label>
+                    </div>
+                    <div class="error">
+                        <p id="mensajeError"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

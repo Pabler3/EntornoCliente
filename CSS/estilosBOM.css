@@ -1,0 +1,70 @@
+body{
+    margin: 20px;
+    background-image: url(../IMG/fondoJS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: 100vw 100vh;
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 750px;
+    color:azure;
+    margin-top: 20px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    position: relative;
+
+}
+
+button {
+    margin-top: 10px;
+    font-family: monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: 0.8s ease-in-out;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out; 
+
+  
+}
+
+button:hover{
+    background-color: rgb(83, 221, 214);
+    transform: scale(1.1);
+    
+}
+
+.textos{
+    font-size: 14px;
+}
+
+.fondo-reloj {
+    background-color: rgb(4, 215, 0);
+    padding:3px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:5%;
+}
+#hora{
+    background-color:rgb(11, 15, 1);
+    font-family: monospace;
+    font-size:40px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+

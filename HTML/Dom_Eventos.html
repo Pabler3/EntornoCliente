@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página para el manejo del DOM y Eventos</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilosDom_Eventos.css"/>
+    <script src="../JS/funcionesDOM_Eventos.js"></script>
+    <script>
+        window.addEventListener("load", principal) //Con un evento nos aseguramos que cuando cargue la pagina escuche la funcion 'principal'
+    </script>
+</head>
+<body id="cuerpo">
+    <div class="container">
+        <h2 id="h2Saludo"></h2>
+        <h2 id="h2" onmouseover="style.background='green'" onmouseout="style.background=''">¿Qué lenguajes de programacion te gustan?</h2>
+        <div id="contenedor1">
+            <p id="parrafo1" class="parrafos">Como actualmente estoy cursando 2º DAW vamos hacer una tabla con los lenguajes de programación que hemos visto</p>
+        </div>
+        <div id="cont-principa" class="principal">
+            <div class="tabla">
+                <table id="miTabla">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>ROL</th>
+                            <th>ME GUSTA</th>
+                            <th>NO ME GUSTA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyTabla">
+                        <tr>
+                            <td>1</td>
+                            <td>Javascript</td>
+                            <td>Cliente</td>
+                            <td>😊</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form">
+                <form id="miFormulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="roles">Roles:</label>
+                    <select id="rol" name="rol" required>
+                        <option value="Servidor">Servidor</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                    <label for="meGusta">Me gusta</label>
+                    <input type="checkbox" id="meGusta">
+                    <label for="noGusta">No me gusta</label>
+                    <input type="checkbox" id="noGusta">
+                    <div class="button">
+                        <button id="insertarLenguaje">Agregar Lenguaje</button>
+                        <button id="buscarElemento">Buscar Elemento</button>
+                        <button onclick="moverse('adelante')">➡️</button>
+                        <button onclick="moverse('atras')">⬅️</button>
+                        <button id="accederPadreHijo">Ir Padre/Hijo</button>
+                        <button id="borrarElemento">Borrar Elemento</button>
+                        <button id="crearElemento">Crear Elemento</button>
+                        <button id="recorrerPagina">Recorrer pagina</button>
+                        <button id="modificarLenguaje">Modificar Lenguaje</button>
+                        <button id="mostrarCosas">Te digo cosas</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
